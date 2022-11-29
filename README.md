@@ -1,5 +1,7 @@
 # classification_app
 
-classification_app
+classification application
 
-last updated by Ming Tang on 2021.5.13
+Timeline
+- 2021-05-13, online
+- 2022-11-29, to be modified to lack-of-fusion model
