@@ -13,11 +13,6 @@ with col1:
     hatch = st.slider('Hatch Spacing', min_value=0, max_value=200, step=10, value=100)
     layer = st.slider('Layer Thickness', min_value=0, max_value=100, step=10, value=50)
     angleradians = st.slider('Hatch Rotation Angle', min_value=0, max_value=90, step=5, value=45)
-    
-    # Display the results in the first column as well
-    countsdist = np.histogram(a, bins=20, range=(0,5))
-    totalcounts = np.sum(countsdist[0])
-    st.write("""Total fraction of lack-of-fusion porosity:""", countsdist[0][0]*1.0/totalcounts)
 
 # Rest of your processing code (unchanged)
 widthdev = 0.001
@@ -145,4 +140,7 @@ for index, (name, group) in enumerate(df.groupby(col_groupby)):
 
 # Display the figure in the second column
 with col2:
+    countsdist = np.histogram(a, bins=20, range=(0,5))
+    totalcounts = np.sum(countsdist[0])
+    st.write("""Total fraction of lack-of-fusion porosity:""", countsdist[0][0]*1.0/totalcounts)
     st.pyplot(fig)
