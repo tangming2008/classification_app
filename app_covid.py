@@ -8,7 +8,7 @@ import numpy as np
 # st.beta_set_page_config(layout="wide")
 
 st.title('Predicting covid test results')
-st.subheader('Updated on 2021/5/14 by Ming Tang')
+st.subheader('Updated on 2025-04-02 by Ming Tang')
 
 # input variables
 st.subheader('Check if ture:')
