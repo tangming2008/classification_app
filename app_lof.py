@@ -3,18 +3,21 @@ from matplotlib.pylab import *
 import numpy as np
 import pandas as pd
 
-# Create two columns
+# Create two columns: 1) input, processing conditions, 2) output, lof fraction and meso-structure
 col1, col2 = st.columns([1, 2])
+
+st.title('Predicting Lack-of-Fusion Porosity in Additive Manufacturing')
+st.subheader('by Ming Tang and Chris Pistorius, Carnegie Mellon University')
 
 with col1:
     # Process conditions - sliders in the first column
-    widthAv = st.slider('Melt-Pool Width', min_value=0, max_value=400, step=10, value=200)/2
-    depthAv = st.slider('Melt-Pool Depth', min_value=0, max_value=200, step=10, value=100)/2
+    widthAv = st.slider('Melt-Pool Width', min_value=0, max_value=400, step=10, value=200)/2 # half width
+    depthAv = st.slider('Melt-Pool Depth', min_value=0, max_value=200, step=10, value=100)/2 # half depth
     hatch = st.slider('Hatch Spacing', min_value=0, max_value=200, step=10, value=100)
     layer = st.slider('Layer Thickness', min_value=0, max_value=100, step=10, value=50)
     angleradians = st.slider('Hatch Rotation Angle', min_value=0, max_value=90, step=5, value=45)
 
-# Rest of your processing code (unchanged)
+# Rest of your processing conditions
 widthdev = 0.001
 dwratioAv = depthAv/widthAv
 dwdev = 0.001
