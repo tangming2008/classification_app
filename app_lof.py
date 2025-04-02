@@ -7,8 +7,7 @@ import pandas as pd
 st.title('Predicting Lack-of-Fusion Porosity in Additive Manufacturing')
 st.subheader('by Ming Tang and Chris Pistorius, Carnegie Mellon University')
 
-new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
-st.markdown(new_title, unsafe_allow_html=True)
+st.markdown('sssss', unsafe_allow_html=True)
 
 # Create two columns: 1) input, processing conditions, 2) output, lof fraction and meso-structure
 col1, col2 = st.columns([1, 2])
