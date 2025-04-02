@@ -3,11 +3,12 @@ from matplotlib.pylab import *
 import numpy as np
 import pandas as pd
 
-# Create two columns: 1) input, processing conditions, 2) output, lof fraction and meso-structure
-col1, col2 = st.columns([1, 2])
 
 st.title('Predicting Lack-of-Fusion Porosity in Additive Manufacturing')
 st.subheader('by Ming Tang and Chris Pistorius, Carnegie Mellon University')
+
+# Create two columns: 1) input, processing conditions, 2) output, lof fraction and meso-structure
+col1, col2 = st.columns([1, 2])
 
 with col1:
     # Process conditions - sliders in the first column
