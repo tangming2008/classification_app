@@ -8,7 +8,7 @@ import numpy as np
 # st.beta_set_page_config(layout="wide")
 
 st.title('Predicting covid test results')
-st.subheader('Updated on 2025-04-02 by Ming Tang (tangming.buaa@gmail.com)')
+st.subheader('Updated on 2025-04-02 by Ming Tang [email](tangming.buaa@gmail.com)')
 st.markdown("Contact: [tangming.buaa@gmail.com](mailto:tangming.buaa@gmail.com)")
 
 # input variables
