@@ -9,7 +9,6 @@ import numpy as np
 
 st.title('Predicting covid test results')
 st.subheader('Updated on 2025-04-02 by Ming Tang [email](tangming.buaa@gmail.com)')
-st.markdown("Contact: [tangming.buaa@gmail.com](mailto:tangming.buaa@gmail.com)")
 
 # input variables
 st.subheader('Check if ture:')
