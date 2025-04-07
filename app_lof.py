@@ -6,6 +6,7 @@ import pandas as pd
 
 st.title('Predicting Lack-of-Fusion Porosity in Additive Manufacturing')
 st.write('Authors: Ming Tang and Chris Pistorius, Carnegie Mellon University')
+st.markdown("Contact: mingt@alumni.cmu.edu")
 
 # Create two columns: 1) input, processing conditions, 2) output, lof fraction and meso-structure
 col1, col2 = st.columns([1, 2])
